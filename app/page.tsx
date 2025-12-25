@@ -115,7 +115,7 @@ export default function RewardsPage() {
   }
 
   return (
-    <div className="text-black overflow-x-hidden mt-15 lg:p-10 pt-8 px-4">
+    <div className="text-black overflow-x-hidden md:mt-20 mt-25 lg:p-10 pt-8 px-4">
       <div className="mx-auto">
         {/* Main Tabs */}
         <div className="flex gap-4 mb-8">

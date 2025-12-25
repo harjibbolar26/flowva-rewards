@@ -56,7 +56,7 @@ export function ReferralSection({ userId }: ReferralSectionProps) {
   return (
     <div className="transition-all duration-300 hover:-translate-y-2 hover:shadow-md p-4 rounded-3xl">
       <div className="flex items-start gap-2 mb-6 bg-[#EEF2FF] p-4 rounded-xl">
-        <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
+        <div className="w-12 h-12 rounded-lg flex items-center justify-center shrink-0">
           <Users className="w-6 h-6 text-purple-600" />
         </div>
         <div className="flex-1">

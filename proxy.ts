@@ -40,8 +40,7 @@ export async function proxy(req: NextRequest) {
 
   // Protected routes (now including root /)
   if (
-    req.nextUrl.pathname === "/" ||
-    req.nextUrl.pathname.startsWith("/rewards")
+    req.nextUrl.pathname === "/"
   ) {
     if (!session) {
       return NextResponse.redirect(new URL("/login", req.url));
@@ -65,7 +64,6 @@ export async function proxy(req: NextRequest) {
 export const config = {
   matcher: [
     "/",
-    "/rewards/:path*",
     "/login",
     "/signup",
     "/forgot-password",

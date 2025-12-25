@@ -28,7 +28,7 @@ export function PointsBalance({ userId }: PointsBalanceProps) {
       </div>
       <div className="p-4">
         <div className="flex items-center justify-between mb-4">
-          <span className="text-4xl font-bold">
+          <span className="text-4xl font-bold text-purple-600">
             {points?.points_balance || 0}
           </span>
           <Star size={100} />

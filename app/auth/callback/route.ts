@@ -2,7 +2,6 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import type { CookieOptions } from "@supabase/ssr";
 
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
@@ -24,11 +23,7 @@ export async function GET(request: NextRequest) {
               cookiesToSet.forEach(({ name, value, options }) =>
                 cookieStore.set(name, value, options)
               );
-            } catch {
-              // The `setAll` method was called from a Server Component.
-              // This can be ignored if you have middleware refreshing
-              // user sessions.
-            }
+            } catch {}
           },
         },
       }
@@ -39,6 +34,5 @@ export async function GET(request: NextRequest) {
 
   const next = requestUrl.searchParams.get("next");
 
-  // Redirect to rewards page after successful login, or to the 'next' param if provided
   return NextResponse.redirect(new URL(next || "/", request.url));
 }

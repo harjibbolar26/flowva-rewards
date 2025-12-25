@@ -14,3 +14,4 @@ export { default as Whatsapp } from "./Whatsapp";
 export { default as Facebook } from "./Facebook";
 export { default as Gift } from "./Gift";
 export { default as UserPlus } from "./UserPlus";
+export { default as Bell } from "./Bell";

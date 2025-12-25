@@ -30,7 +30,7 @@ export function RewardCard({
 
       <h3 className="font-bold text-gray-900 mb-2">{reward.name}</h3>
 
-      <p className="text-sm text-gray-500 mb-4 line-clamp-2 flex-grow">
+      <p className="text-sm text-gray-500 mb-4 line-clamp-2 grow">
         {reward.description}
       </p>
 

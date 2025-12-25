@@ -56,8 +56,8 @@ export function useCanClaimToday(userId: string) {
         .maybeSingle();
 
       if (error) throw error;
-      console.log(data);
-      return !data; // Can claim if no record exists for today
+      // console.log(data);
+      return !data;
     },
     enabled: !!userId,
   });

@@ -90,7 +90,7 @@ export function EarnMorePoints() {
       <div className="rounded-3xl shadow-sm border border-gray-200 transition-all duration-300 hover:-translate-y-2 hover:shadow-md hover:border-purple-600">
         <div className="">
           <div className="flex items-start gap-5 p-4 bg-white rounded-t-3xl">
-            <div className="w-10 h-10 bg-[#9013fe1a] rounded-lg flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 bg-[#9013fe1a] rounded-lg flex items-center justify-center shrink-0">
               <Share2 className="w-6 h-6 text-purple-600" />
             </div>
             <div className="flex flex-col">
