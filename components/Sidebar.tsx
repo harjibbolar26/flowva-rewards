@@ -136,22 +136,23 @@ export function Sidebar({
 
         {/* User Menu */}
         {user && (
-          <div className="relative border-t border-gray-200">
+          <div className="relative p-4">
+            <hr className="border-t border-black pb-4"/>
             <button
               onClick={() => setShowUserMenu(!showUserMenu)}
-              className="w-full p-4 flex items-center gap-3 hover:bg-gray-50 transition-colors"
+              className="w-full flex items-center gap-3 hover:bg-gray-50 transition-colors cursor-pointer"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
+              <div className="w-10 h-10 shrink-0 bg-linear-to-br from-purple-600 to-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
                 {getUserDisplayName().charAt(0).toUpperCase()}
               </div>
-              <div className="flex-1 text-left">
-                <p className="font-medium text-gray-900 text-sm">
+              <div className="flex-1 text-left min-w-0">
+                <p className="font-medium text-gray-900 text-sm truncate">
                   {getUserDisplayName()}
                 </p>
                 <p className="text-xs text-gray-500 truncate">{user.email}</p>
               </div>
               <ChevronUp
-                className={`w-5 h-5 text-gray-400 transition-transform ${
+                className={`w-5 h-5 shrink-0 text-gray-400 transition-transform ${
                   showUserMenu ? "rotate-180" : ""
                 }`}
               />
