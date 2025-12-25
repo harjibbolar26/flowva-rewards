@@ -1,6 +1,6 @@
 # Flowva Rewards Hub
 
-A comprehensive rewards and gamification platform built with Next.js 14, Supabase, and Tailwind CSS. Users can earn points through daily check-ins, referrals, and social sharing, which can be redeemed for real-world rewards.
+A comprehensive rewards and gamification platform built with Next.js 16, Supabase, and Tailwind CSS. Users can earn points through daily check-ins, referrals, and social sharing, which can be redeemed for real-world rewards.
 
 ## 🚀 Features
 
@@ -25,7 +25,7 @@ A comprehensive rewards and gamification platform built with Next.js 14, Supabas
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: [Next.js 14](https://nextjs.org/) (App Router), [React](https://react.dev/)
+- **Frontend**: [Next.js 16](https://nextjs.org/) (App Router), [React](https://react.dev/)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Backend & Database**: [Supabase](https://supabase.com/) (PostgreSQL, Auth, Edge Functions)
@@ -38,17 +38,16 @@ A comprehensive rewards and gamification platform built with Next.js 14, Supabas
 ```
 flowva-rewards/
 ├── app/                    # Next.js App Router pages and layouts
-│   ├── (auth)/             # Authentication routes (login, signup)
+│   ├── login/              # Login route 
+│   ├── signup/             # Signup route
 │   ├── auth/               # Auth callback handlers
 │   ├── forgot-password/    # Password reset request page
 │   ├── reset-password/     # Password reset confirmation page
-│   ├── rewards/            # Main rewards dashboard
-│   ├── settings/           # User settings (profile, etc.)
 │   ├── globals.css         # Global styles and Tailwind theme
 │   └── layout.tsx          # Root layout with font configuration
+│   └── page.tsx            # Main rewards page
 ├── components/             # Reusable UI components
 │   ├── rewards/            # Reward-specific components (DailyStreak, RewardCard, etc.)
-│   ├── settings/           # Settings-specific components
 │   ├── ClientLayout.tsx    # Layout wrapper for Sidebar/TopNav logic
 │   ├── Sidebar.tsx         # Responsive sidebar navigation
 │   └── TopNav.tsx          # Sticky top navigation bar
