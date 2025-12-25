@@ -40,5 +40,5 @@ export async function GET(request: NextRequest) {
   const next = requestUrl.searchParams.get("next");
 
   // Redirect to rewards page after successful login, or to the 'next' param if provided
-  return NextResponse.redirect(new URL(next || "/rewards", request.url));
+  return NextResponse.redirect(new URL(next || "/", request.url));
 }
